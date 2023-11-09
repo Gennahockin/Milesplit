@@ -31,7 +31,7 @@ public class Milesplit {
         while (newIndex < runners.size() && newRunner.getTime() > runners.get(newIndex).getTime()) {///as long as the list of runners is a size the loop will continue to go through it
         	//runners.size is the existing list of runners
             newIndex++;///tells to go through the next runner on the list
-        }
+        }//new
 
         runners.add(newIndex, newRunner); //-adds the new runner to the array list
     }
