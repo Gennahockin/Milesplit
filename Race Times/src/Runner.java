@@ -1,5 +1,6 @@
 
 public class Runner
+///POGO helps to organize the runners and their time so when called they will go in the right order. 
 	{
 		private int time;
 		private String name;
