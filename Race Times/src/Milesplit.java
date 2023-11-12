@@ -6,35 +6,44 @@ public class Milesplit {
         Times.fillArray(); // Fill the initial list of runners
 
         Scanner scanner = new Scanner(System.in);
-
+        
+        //name
         System.out.print("Enter your name:");
-        String newName = scanner.nextLine();
-
+        String newName = scanner.nextLine(); 
+        
+        //time
         System.out.print("Enter the time (in the form of 1448 if running a 14:48 ) for the new runner: ");
         int newTime = scanner.nextInt();
+        
         //create new runner
         Runner newRunner = new Runner(newName, newTime);
-
         insertRunnerInOrder(newRunner, Times.time);
-
-        // Print the updated list of runners
+       
+        ///current runner
         System.out.println("Updated List of Runners:");
         for (int i = 0; i < Times.time.size(); i++) {
-          //  Runner runner = Times.time.get(i);
+          Runner runner = Times.time.get(i);
             System.out.println((i + 1) + ")" + runner.getName() + " ~ " + runner.getTime());
         }
     }
-
-    public static void insertRunnerInOrder(Runner newRunner, ArrayList<Runner> runners) {///already takes the new runner and the old list just in the void parameters
-        int newIndex = 0; // - tells where the runner will be inserted into the code
-/// takes the runner and the list of runners and inserts in ascending orders
-        while (newIndex < runners.size() && newRunner.getTime() > runners.get(newIndex).getTime()) {///as long as the list of runners is a size the loop will continue to go through it
-        	//runners.size is the existing list of runners
-            newIndex++;///tells to go through the next runner on the list
-        }//new
-
-        runners.add(newIndex, newRunner); //-adds the new runner to the array list
+    
+    ///compare and insert
+    public static void insertRunnerInOrder(Runner newRunner, ArrayList<Runner> runners) {
+        int newIndex = 0; 
+        while (newIndex < runners.size() && newRunner.getTime() > runners.get(newIndex).getTime()) {
+        	newIndex++;
+        }
+        
+        ///add runner to the list
+        runners.add(newIndex, newRunner);
     }
+    
+    
+    
+    
+    
+    
+    
 //   public static void options(String[] args) {
 	//   Scanner userIntInput = new Scanner(System.in);
 	   //System.out.println("Would you like to 1) see where you would fall in the list of runners or 2) see the list of already set runners?");
