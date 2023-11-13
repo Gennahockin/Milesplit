@@ -36,25 +36,24 @@ public class Milesplit {
         
         ///add runner to the list
         runners.add(newIndex, newRunner);
-    }
-    
-    
-    
-    
-    
-    
-    
-//   public static void options(String[] args) {
-	//   Scanner userIntInput = new Scanner(System.in);
-	   //System.out.println("Would you like to 1) see where you would fall in the list of runners or 2) see the list of already set runners?");
-	   //
-	   //int  firstChoice = userIntInput.nextInt();
-	   //if(firstChoice ==1) {
-		  // System.out.println(runners.getName() + runners.getTime());
-		  
-	  // }
-	    
    }
+    
+  // public static void options(String[] args)
+ ///  {
+	//  Scanner userIntInput = new Scanner(System.in);
+//	   System.out.println("Would you like to 1) see where you would fall in the list of runners or 2) see the list of already set runners?");
+	   
+	///  int  firstChoice = userIntInput.nextInt();
+	//  if(firstChoice ==1) {
+//		  System.out.println(runner.getName() + runner.getTime());
+    //	} else if {secondChoice == 2){
+    	//System.out.println(Times.time);
+  ///  }
+		  
+	 
+//}
+}
+
 
 
 
