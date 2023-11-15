@@ -38,7 +38,7 @@ public class Milesplit {
         runners.add(newIndex, newRunner);
    }
     
-  // public static void options(String[] args)
+  // public static void twoOptions(String[] args)
  ///  {
 	//  Scanner userIntInput = new Scanner(System.in);
 //	   System.out.println("Would you like to 1) see where you would fall in the list of runners or 2) see the list of already set runners?");
