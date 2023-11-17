@@ -12,7 +12,7 @@ public class Milesplit {
         String newName = scanner.nextLine(); 
         
         //time
-        System.out.print("Enter the time (in the form of 1448 if running a 14:48 ) for the new runner: ");
+        System.out.print("Enter the 5k time (in the form of 1448 if running a 14:48 ) for the new runner: ");
         int newTime = scanner.nextInt();
         
         //create new runner
@@ -26,17 +26,24 @@ public class Milesplit {
             System.out.println((i + 1) + ")" + runner.getName() + " ~ " + runner.getTime());
         }
     }
-    
+    //runnersList = times.time 
     ///compare and insert
-    public static void insertRunnerInOrder(Runner newRunner, ArrayList<Runner> runners) {
+    public static void insertRunnerInOrder(Runner newRunner, ArrayList<Runner> runnersList) {
         int newIndex = 0; 
-        while (newIndex < runners.size() && newRunner.getTime() > runners.get(newIndex).getTime()) {
+        while (newIndex < runnersList.size() && newRunner.getTime() > runnersList.get(newIndex).getTime()) {
         	newIndex++;
         }
         
         ///add runner to the list
-        runners.add(newIndex, newRunner);
+        runnersList.add(newIndex, newRunner);
    }
+    
+    
+    
+    
+    
+    
+    
     
   // public static void twoOptions(String[] args)
  ///  {
@@ -46,8 +53,10 @@ public class Milesplit {
 	///  int  firstChoice = userIntInput.nextInt();
 	//  if(firstChoice ==1) {
 //		  System.out.println(runner.getName() + runner.getTime());
+    
     //	} else if {secondChoice == 2){
     	//System.out.println(Times.time);
+    
   ///  }
 		  
 	 
